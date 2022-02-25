@@ -28,6 +28,7 @@ public class Testing : MonoBehaviour
         for (int i = 0; i < entityArray.Length; i++)
         {
             entityManager.SetComponentData(entityArray[i], new LevelComponent() { level = Random.Range(10, 20) });
+            entityManager.SetComponentData(entityArray[i], new SpeedComponent() { speed = 3 });
             entityManager.SetSharedComponentData(entityArray[i], new RenderMesh() { mesh = this.mesh, material = this.material });
 
         }
