@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
 
-public struct LevelComponent : IComponentData
+public struct PositionComponent : IComponentData
 {
-    public float level;
+    public Vector3 pos;
 }
