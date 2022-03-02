@@ -8,8 +8,6 @@ using Unity.Rendering;
 
 public class Testing : MonoBehaviour
 {
-    public Mesh mesh;
-    public Material material;
     public GameObject prefab;
     // 初始化调用
     void Start()
