@@ -34,10 +34,27 @@ namespace BehaviorTree
 
     public class BehaviorTree
     {
-        public static BehaviorTree CreateTree()
-        {
+        protected readonly BtNode rootNode;
 
+        protected NodeState nodeState;
+        public BehaviorTree(BtNode root)
+        {
+            rootNode = root;
         }
+
+        public NodeState Update()
+        {
+            nodeState = rootNode.OnVisit();
+            return nodeState;
+        }
+
+        public void Reset()
+        {
+            rootNode.Reset();
+        }
+
+
+
     }
 
     /// <summary>
