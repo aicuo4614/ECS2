@@ -166,6 +166,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c373eea95f3446d48a42da55d6edcefe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsEnoughEat: 1
+  IsHasGirlFriend: 1
+  IsEnoughPayMovie: 0
+  Execute: 0
 --- !u!1 &216416369
 GameObject:
   m_ObjectHideFlags: 0
